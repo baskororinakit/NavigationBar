@@ -1,0 +1,140 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181717;
+}
+
+.navbar {
+    background-color: #181717;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-bottom: 1px solid #c0bebe57;
+}
+
+.avatar-img img {
+    display: flex;
+    width: 50px;
+    border-radius: 70%;
+}
+
+.navbar > ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.a-navbar {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-weight: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.6s ease, font-size 0.3s ease;
+}
+
+.a-navbar:hover {
+    border-bottom: 1px solid lightgreen;
+    color: lightgreen;
+    transition: all ease-in-out;
+    transform: scale(1.2);
+    font-size: 20px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    display: none;
+    color: white;
+}
+
+.logo-web {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 70%;
+}
+
+.text-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.822);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+.text-desc {
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    padding: 0 1rem;
+}
+
+
+@media only screen and (max-width : 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul.hidden {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-web {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        height: 40%;
+        border-radius: 70%;
+    }
+
+    .text-desc {
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        padding: 0 0,5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
